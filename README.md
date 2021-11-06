@@ -21,7 +21,9 @@ datetime
 time
 locale
 
-### Run ''
+### Data update
+To get the updated recipe data from thet website, run 'Code for data scaping\get_recipe_url.py' first, then run 'Code for data scaping\get_recipe_detail.py'. The data will be stored in the ‘/Data’ file.
+### Run 'Recipe recommendor\1.main program.py' to start the main program.
 
 ### User Input 
 Gender Input - Please enter either “M” for Male or “F” for Female to indicate the user’s gender
@@ -38,8 +40,7 @@ Exercise Recommendation - Exercise output is provided in a per hour unit. Our pr
 Daily Recipe - The program returns meals in the order of breakfast, and other dishes, customized to the user’s calorie intake limits and the temperature of the day. If the program presumes that the temperature is below 50 degrees fahrenheit, a soup or stew is included in the daily meal recommendations. 
 Shopping List - The program returns a daily shopping list for users based on daily recipe recommendation. Each kind of ingredient as well as its amount occupies 1 row, while all ingredients needed for per meal are listed together.
 
-### Data update
-To get the updated recipe data from thet website, run ‘get_recipe_url.py first, then run ‘get_recipe_detail.py’. The data will be stored in the ‘/Data’ file.
+
 
 
 
