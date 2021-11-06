@@ -1,0 +1,22 @@
+# details of 2 datasets -- a csv and a json
+
+## recipe_nutrient.csv
+columns: 
+'Recipe': name of the recipe
+'Cat', 'Subcat': category and subcategory. see https://www.calorieking.com/recipes/
+'Calories', 'Kilojoules', 'Fat', 'Saturated Fat', 'Cholesterol', 'Sodium', 'Carbohydrates', 'Fiber', 'Total Sugars', 'Protein', 'Calcium': nutrients without units.
+'URL': url of the recipe
+
+## cooking_detail_dict.json
+It is a dictionary. The key is the name of the recipe with the values being another dictionary containing the ingedients (python list) and the directions to cook (string).
+
+
+
+# How to read data from csv and json?
+## csv
+load_df = pd.read_csv('../Data/recipe_nutrient.csv')
+## json
+with open("../Data/cooking_detail_dict.json",'r') as load_f:
+     load_dict = json.load(load_f)
+     print(load_dict)
+
